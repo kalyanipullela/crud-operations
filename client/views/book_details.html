@@ -18,10 +18,10 @@
         </ul>
         <a target="_blank" href="{{book.buy_url}}" class="btn btn-primary">Buy on Amazon</a>
       </div>
+    <div class="pull-right">
+  <a href="#/books/edit/{{book._id}}">Edit</a> |  <a href="#" ng-click="removeBook(book._id)">Delete</a>
+  </div>
     </div>
   </div>
 </div>
 
-<div class="pull-right">
-  <a href="#/books/edit/{{book._id}}">Edit</a> |  <a href="#" ng-click="removeBook(book._id)">Delete</a>
-  </div>

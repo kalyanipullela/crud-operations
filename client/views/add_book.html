@@ -1,18 +1,19 @@
-<a href="#/books">Go Back</a>
+
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h3 class="panel-title">Add Book</h3>
+<h3 Style="font-family:Impact, Charcoal, sans-serif;font-size:30px" class="panel-title"><strong>ADD BOOK</strong></h3>
+<a href="#/books"><font style="margin-left:1000px">Go Back</font></a>
   </div>
   <div class="panel-body">
     <div class="row">
       <div class="col-md-12">
       <form ng-submit="addBook()">
-        <div class="form-group">
-          <label>Title</label>
-          <input type="text" class="form-control" ng-model="book.title" placeholder="Title">
+        <div  class="form-group">
+          <label style="font-family:Georgia, serif;font-size:18px" >TITLE</label>
+          <input type="text" class="form-control" ng-model="book.title" placeholder="Name of Book" required>
         </div>
         <div class="form-group">
-          <label>Genre</label>
+          <label style="font-family:Georgia, serif;font-size:18px" required>GENRE</label>
           <select ng-model="book.genre" class="form-control">
             <option value="Suspense">Suspense</option>
             <option value="Drama">Drama</option>
@@ -22,32 +23,34 @@
           </select>
         </div>
         <div class="form-group">
-          <label>Author</label>
-          <input type="text" class="form-control" ng-model="book.author" placeholder="Author">
+          <label style="font-family:Georgia, serif;font-size:18px" required>AUTHOR</label>
+          <input type="text" class="form-control" ng-model="book.author" placeholder="Name of the Author">
         </div>
         <div class="form-group">
-          <label>Publisher</label>
-          <input type="text" class="form-control" ng-model="book.publisher" placeholder="Publisher">
+          <label style="font-family:Georgia, serif;font-size:18px" required >PUBLISHER</label>
+          <input type="text" class="form-control" ng-model="book.publisher" placeholder="Name of the Publisher">
         </div>
         <div class="form-group">
-          <label>Pages</label>
-          <input type="text" class="form-control" ng-model="book.pages" placeholder="Pages">
+          <label style="font-family:Georgia, serif;font-size:18px" required>PAGES</label>
+          <input type="number" class="form-control" ng-model="book.pages"  pattern="[0-9]{10}"  placeholder="Number of Pages">
         </div>
         <div class="form-group">
-          <label>Description</label>
-          <textarea class="form-control" ng-model="book.description" placeholder="Description"></textarea>
+          <label style="font-family:Georgia, serif;font-size:18px" >DESCRIPTION</label>
+          <textarea class="form-control" ng-model="book.description" placeholder="Description of the Book"></textarea>
         </div>
         <div class="form-group">
-          <label>Image URL</label>
-          <input type="text" class="form-control" ng-model="book.image_url" placeholder="Image URL">
+          <label style="font-family:Georgia, serif;font-size:18px" >IMAGE URL</label>
+          <input type="text" class="form-control" ng-model="book.image_url" placeholder="Write the URL for Image">
         </div>
         <div class="form-group">
-          <label>Buy URL</label>
-          <input type="text" class="form-control" ng-model="book.buy_url" placeholder="Buy URL">
+          <label style="font-family:Georgia, serif;font-size:18px" >BUY URL</label>
+          <input type="text" class="form-control" ng-model="book.buy_url" placeholder="Write the URL for Buying">
         </div>
-       
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+       <div align="center">
+        <button type="submit" style="font-family:Georgia, serif;font-size:18px"  class="btn btn-default">SUBMIT</button>
+
+<button type="reset" style="font-family:Georgia, serif;font-size:18px"  class="btn btn-default">RESET</button>   </div>   </form>
+
     </div>
     </div>
   </div>
